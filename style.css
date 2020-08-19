@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+#mainNav .fa{
+    border: 2px solid #7F7E7E;
+    color: #7F7E7E;
+    border-radius: 45%;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+#mainNav .fa:hover{
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+}
+#mainNav li a{
+    font-size: 18px;
+    font-weight: 600;
+}
+#intro-sect{
+    background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.7)), url(img/Headedbg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+}
+#latest-product img{
+    width: 90%;
+    min-height: 260px;
+}
+#popular-products img{
+    width: auto;
+    min-height: 260px;
+    transform: scale(1);
+    transition: .3s all ease;
+}
+#rating-icon .fa{
+    transition: .3s;
+}
+#rating-icon .fa-heart:hover{
+    color: #F23A2E!important;
+}
+.btn-black{
+    border: 2px solid #000;
+    font-weight: 600;
+    background: black;
+    color: #fff;
+    margin-right: 10px;
+    transition: .3s;
+}
+.btn-black:hover{
+    background: #fff;
+    color: #000;
+}
+.btn-outline-black{
+    border: 2px solid #000;
+    font-weight: 600;
+    color: #000000;
+    transition: .3s;
+}
+.btn-outline-black:hover{
+    background: #000;
+    color: #fff;
+}
+.product-item figure {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.product-item figure::before {
+    z-index: 2;
+    transition: .4s all ease;
+    transform: scale(1.05);
+    position: absolute;
+    content: "";
+    border: 4px solid #f16821;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-item:hover figure::before{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+#popular-products .product-item:hover figure img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+/*-----------/*
+
+
+
+/*-------------*/
+#email{
+    background: linear-gradient(rgba(24, 23, 23, 0.7), rgba(24, 23, 23, 0.7)), url('img/hero_2.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#email .form-control{
+    background: none;
+}
+#email .form-control:focus{
+    box-shadow: none;
+    border-color: white;
+}
+/*About This Product*/
+#about-product .product-title-wrap{
+    position: relative;
+    z-index: 2;
+}
+#about-product .number{
+    font-size: 8rem;
+    font-weight: 900;
+    color: #e9ecef;
+    position: absolute;
+    line-height: 0;
+    top: 40px;
+    z-index: -1;
+}
+.price{
+    color: #ADB8D0;
+    font-size: 18px;
+}
+.position-relative{
+    position: relative;
+}
+.experience{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background: #46DDB0;
+    padding: 10px 15px;
+}
+.caption{
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+.year{
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+#Team a{
+    width: 40px;
+    height: 40px;
+    background: #777;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .5s all ease;
+}
+#Team a .fa{
+    color: #fff;
+}
+#Team a:hover{
+    background: #131212;
+    transform: rotate(360deg);
+}
+#services .services-icon{
+    font-size: 50px;
+    color: #f16821!important;
+    line-height: 0;
+}
+#services a{
+    color: #f16821;
+}
+#testimonial .carousel-indicators li{
+    width: 13px;
+    height: 0;
+    color: #ddd;
+    background: #F89D13;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#footer span a{
+    width: 40px;
+    height: 40px;
+    background: #777;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .5s all ease;
+}
+#footer span a .fa{
+    color: #fff;
+}
+#footer span a:hover{
+    background: #131212;
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #testimonial img{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+    #blog .col-md-6{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 575px) {
+
+}
